@@ -87,11 +87,7 @@ try {
 // Prompt Inquirer questions
 const userResponses = await inquirer.prompt(questions);
 console.log("Your responses: ", userResponses);
-console.log("Now attempting to pull you GitHub data...");
-
-// Call GitHub api for user info
-// const userInfo = await api.getUser(userResponses);
-// console.log("Your GitHub user info: ", userInfo);
+console.log("Now attempting to pull your GitHub data...");
 
 // Pass Inquirer userResponses and GitHub userInfo to generateMarkdown
 console.log()
@@ -99,7 +95,7 @@ const markdown = generateMarkdown(userResponses);
 console.log(markdown);
 
 // Write markdown to file
-await writeFileAsync('ExampleREADME.md', markdown);
+await writeFileAsync('READMEex.md', markdown);
 
 } catch (error) {
 console.log(error);
