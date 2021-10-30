@@ -75,10 +75,6 @@ console.log("Your README.md file has been created")
 
 const writeFileAsync = util.promisify(writeToFile);
 
-// TODO: Create a function to initialize app
-// async function init() {
-// };
-
 // Function call to initialize app
 
 async function init() {

@@ -16,6 +16,7 @@ function generateMarkdown(data) {
   ${data.project_description}
   ${data.Gusername}
   ${data.repository_name}
+  ${data.project_title}
 `;
 }
 
